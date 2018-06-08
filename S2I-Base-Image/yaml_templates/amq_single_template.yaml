@@ -79,17 +79,17 @@ objects:
       protocol: TCP
       port: 61616
       targetPort: artemis
-      nodePort: 30201
+      nodePort: 30202
     - name: jolokia
       protocol: TCP
       port: 8161
       targetPort: jolokia
-      nodePort: 30251
+      nodePort: 30252
     - name: amqp
       protocol: TCP
       port: 5672
       targetPort: amqp
-      nodePort: 30271
+      nodePort: 30272
     type: LoadBalancer
     selector:
       app: amq-single
